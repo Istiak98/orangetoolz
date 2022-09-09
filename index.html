@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/76c31fd1f0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Carrier Lookup</title>
+  </head>
+  <body>
+    <!-- left side menu section -->
+    <section id="menu">
+      <div class="logo">
+        <img src="" alt="" />
+        <h2>CarrierLookup</h2>
+        <small>Accurate Carrier Info</small>
+      </div>
+      <div class="items">
+        <li>
+          <i class="fa-solid fa-layer-group"></i><a href="#">Dashboard</a>
+        </li>
+        <li><i class="fa-solid fa-file"></i><a href="#">Lookup</a></li>
+        <li>
+          <i class="fa-sharp fa-solid fa-layer-group"></i><a href="#">Files</a>
+        </li>
+        <li>
+          <i class="fa fa-car fa-lg"></i><a href="#">Logs</a
+          ><span class="logs"><i class="fa-solid fa-angle-down"></i></span>
+          <!-- <ul class="serve-show">
+            <li><i class="fa fa-car fa-lg"></i><a href="#">Single/Bulk Lookup</a></li>
+            <li><i class="fa fa-car fa-lg"></i><a href="#">Single/Bulk Lookup</a></li>
+          </ul> -->
+        </li>
+        <li><i class="fa fa-car fa-lg"></i><a href="#">Buy Credits</a></li>
+        <li><i class="fa-solid fa-virus"></i><a href="#">Integrations</a></li>
+        <li>
+          <i id="profilePic" class="fa-solid fa-user profile"></i
+          ><a id="profilePicTxt" href="#">My Profile</a>
+        </li>
+      </div>
+    </section>
+    <!-- top navbar section -->
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div class="profile">
+            <div class="balance">
+              <p>Balance: <span class="dollar">$125</span></p>
+            </div>
+            <div class="profile21">
+              <div class="select-menu">
+                <div class="select-btn">
+                  <img src="./assets/images/profile.jpg" alt="" />
+                  <span class="Btn-text">Alexa Jui</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <ul class="options">
+                  <li class="option">
+                    <span class="option-text">My Profile</span>
+                  </li>
+                  <li class="option">
+                    <span class="option-text">Add Fund</span>
+                  </li>
+                  <li class="option">
+                    <span class="option-text">API Documentation</span>
+                  </li>
+                  <li class="option">
+                    <span class="option-text">Log Out</span>
+                  </li>
+
+                  <li class="LOGOUT">
+                    <i id="profilePic" class="fa-solid fa-right-from-bracket">
+                      Log Out</i
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Credit -->
+      <div class="Credit">
+        <div class="card card-1">
+          <div class="proInfo">
+            <img src="./assets/images/profile.jpg" alt="" />
+            <h4>Alexa Jui</h4>
+            <small>alexajui@gmail.com</small> <br />
+            <small>+1 354 785 4125</small> <br />
+            <small>3213 D Street, Columbus, USA</small>
+          </div>
+        </div>
+        <div class="card2 card-3">
+          <h4 id="crdt-text">Your Credit Cards</h4>
+          <div class="values">
+            <div class="val-box">
+              <div>
+                <div class="dlt-icon">
+                  <i id="dlt-ic" class="fa-regular fa-trash-can"></i>
+                </div>
+                <div class="card-item">
+                  <h3>Credit Card 1</h3>
+                </div>
+                <span>xxxxxxxxxxxx4684</span>
+              </div>
+            </div>
+            <div class="val-box2">
+              <div>
+                <div class="dlt-icon">
+                  <i id="dlt-ic-red" class="fa-regular fa-trash-can"></i>
+                </div>
+                <div class="card-item">
+                  <h3>Credit Card 2 (Default)</h3>
+                </div>
+                <span>xxxxxxxxxxxx4242</span>
+              </div>
+            </div>
+            <div class="val-box">
+              <div>
+                <div class="dlt-icon">
+                  <i id="dlt-ic" class="fa-regular fa-trash-can"></i>
+                </div>
+                <div class="card-item">
+                  <h3>Credit Card 3</h3>
+                </div>
+                <span>xxxxxxxxxxxx1254</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lower part heading -->
+      <div class="border-box">
+        <div id="menu-outer">
+          <div class="table">
+            <ul id="horizontal-list">
+              <li>Update Profile</li>
+              <li>Change Password</li>
+              <li>Email Notifications</li>
+              <li>Auto Recharge Settings</li>
+            </ul>
+          </div>
+        </div>
+        <!-- radio button text -->
+        <div class="radio-list">
+          <div>
+            <label class="radio" for="radio__toggle1">
+              <input
+                class="radio__toggle"
+                id="radio__toggle1"
+                type="checkbox"
+              />
+              <span class="radio__span">
+                Notify me when list verification completes
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="radio" for="radio__toggle1">
+              <input
+                class="radio__toggle"
+                id="radio__toggle1"
+                type="checkbox"
+              />
+              <span class="radio__span">
+                Notify me when list export completes
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="radio" for="radio__toggle1">
+              <input
+                class="radio__toggle"
+                id="radio__toggle1"
+                type="checkbox"
+              />
+              <span class="radio__span">
+                Notify me when list verification result is about to expire
+              </span>
+            </label>
+          </div>
+          <div>
+            <label class="radio" for="radio__toggle1">
+              <input
+                class="radio__toggle"
+                id="radio__toggle1"
+                type="checkbox"
+              />
+              <span class="radio__span"> Receive Low Credits Email </span>
+            </label>
+          </div>
+          <!-- input part -->
+          <div class="container">
+            <form>
+              <div class="row">
+                <div class="col1">
+                  <small>Send Email to<span class="star">*</span></small>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="alexajui@gmail.com"
+                  />
+                </div>
+
+                <div class="col2">
+                  <small
+                    >When credits are less than<span class="star">*</span>
+                  </small>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="50"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <input id="btn" type="submit" value="Save Changes" />
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
